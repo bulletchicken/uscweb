@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin:0;
+    height:1500px;
+    background-image: linear-gradient(#5474ab, #ffffff);
+    font-family: Arial;
+    color: #ffffff;
+}
+
+a {
+    /* removing default style for links */
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.frontpage{
+    text-align: center;
+    flex-direction:column;
+    padding:0.5rem;
+    margin:auto;
+}
+
+.frontpage img{
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+
+.frontpage button{
+    float: center;
+    text-indent: 75%;
+    position:relative;
+    text-align: center;
+    line-height: 200%;
+    flex-direction:column;
+    display: inline-flex;
+    flex-direction: column;
+    width:20rem;
+    height:6rem;
+    font-weight:bold;
+    font-size:2rem;
+    padding:1rem;
+    background:firebrick;
+    color:white;
+    border:2px solid transparent;
+    border-radius:10rem;
+    transition:background 200ms ease-in, color 200ms ease-in;
+    transition: 200ms ease-in, color 200ms ease-in;
+}
+
+:hover.button{
+
+}
+
+:hover.frontpage button{
+    background:transparent;
+    color:white;
+    border:solid #ffffff;
+}
+
+.navbar {
+    position:fixed;
+    overflow: visible;
+    background-color: transparent;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    
+}
+.navbar #nav-link{
+    position:fixed;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: #f2f2f2;
+    text-align: right;
+    font-size: 25px;
+    margin-left: 80%;
+    margin-right:100%;
+    padding:0 0.125rem;
+    
+}
+
+/* Changes the properties for each nav bar link */
+.navbar a {
+    padding-left:20%;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar img {
+    width: 20%;
+    margin-top:-2%;
+    color:transparent;
+}
+@media all and (max-width:720px){
+    .navbar{
+        flex-direction:column;
+    }
+}
