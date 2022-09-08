@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    
     margin:0;
     height:1500px;
     background-image: linear-gradient(#5474ab, #ffffff);
@@ -33,34 +32,46 @@ a {
 .frontpage{
     text-align: center;
     flex-direction:column;
+    padding:0.5rem;
+    margin:auto;
+}
+
+.frontpage img{
+    object-fit: cover;
+    object-position: 20% 10%;
 }
 
 
 .frontpage button{
+    float: center;
+    text-indent: 75%;
+    position:relative;
     text-align: center;
+    line-height: 200%;
+    flex-direction:column;
     display: inline-flex;
     flex-direction: column;
-    padding:1rem;
     width:20rem;
     height:6rem;
     font-weight:bold;
-    font-size:1rem;
-    margin:1rem;
-    background:transparent;
+    font-size:2rem;
+    padding:1rem;
+    background:firebrick;
     color:white;
-    border:2px solid white;
+    border:2px solid transparent;
     border-radius:10rem;
     transition:background 200ms ease-in, color 200ms ease-in;
+    transition: 200ms ease-in, color 200ms ease-in;
 }
 
 :hover.button{
-    transform:scale(1.05);
+
 }
 
 :hover.frontpage button{
-    border:transparent;
-    background:firebrick;
+    background:transparent;
     color:white;
+    border:solid #ffffff;
 }
 
 .navbar {
