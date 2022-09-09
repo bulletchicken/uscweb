@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Particles</title>
+    <title>Unionville Science Club</title>
     <link rel="stylesheet" href = "index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
     <div id="particles-js"></div>
     <script src="particles.js"></script>
     <script>
-        particlesJS.load('particles-js', 'particles.json', function(){
+        particlesJS.load('particles-js', 'config/particles.json', function(){
           console.log('particles.json loaded...');
         });
     </script>
     
     <nav class="navbar">
         <div>
-            <img src = "logo.png">
+            <img src = "images/logo.png">
         </div>
 
         <ul id="nav-link">
@@ -30,17 +32,25 @@
         </ul>
     </nav>
 
+    <!---->
+
     <div class="entrance">
-        <a href="#frontp">discover...</a href>
+        <a href="#destination">discover...</a href>
     </div>
+
 
     <div id="theDepths"></div>
     
-    <div id="frontp" class="frontpage">
-        <img src="hilogo.png">
+    
+    <div id="destination" class="frontpage">
+        <img src="images/hilogo.png">
         <br/>
         <button onclick="empty()">Join</button>
     </div>
+
+
+
+
     <div id="execs"></div>
     <div id="About"></div>
     <div id="gallery"></div>
