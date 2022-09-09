@@ -1,28 +1,73 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
-    
     margin:0;
-    height:1500px;
-    background-image: linear-gradient(#5474ab, #ffffff);
-    font-family: Arial;
+    padding:0;
+    height:5000px;
+    /* 
+    make it mostly white top
+    og: 5474ab 
+    chemcool: 2164da
+    midnight: 1a4694
+    */
+
+    /*
+    background-image: linear-gradient(#ffffff, #5474ab); 
+    background-position: 0 0;
+    background-size: 100% 2000px;
+    background-repeat:no-repeat;
+
+    background-image: linear-gradient(#ffffff, #5474ab); 
+    background-position-y: 100;
+    background-size: 100% 2000px;
+    background-repeat:no-repeat;
+
+    */
+    
+    /*
+    background-image: linear-gradient(#002f80, #ffffff); 
+    background-position: 0 2000px; 
     color: #ffffff;
+    */
 }
 
-a {
-    /* removing default style for links */
-    text-decoration: none;
-    color: #ffffff;
+.entrance {
+    vertical-align: middle;
+    height:2000px;
+    background-image: linear-gradient(#ffffff, #003083); 
+    background-size: 100% 2000px;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
+.entrance a{
+    display: inline-block;
+    padding: 25rem 20px;
+    text-decoration: none;
+    color: black;
+}
 
+#theDepths {
+    height:10px;
+    background-color: #003083;
+}
 
+.frontpage {
+    height:1500px;
+    background-image: linear-gradient(#003083, #ffffff); 
+    background-size: 100% 1500px;
+    background-repeat:no-repeat;
+    text-align: center;
+    vertical-align: middle;
+}
 
 #particles-js {
-    position: fixed;
+    top:2000px;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -30,97 +75,87 @@ a {
     background-position: center;
 }
 
-.frontpage{
-    text-align: center;
-    flex-direction:column;
-    padding:0.5rem;
-    margin:auto;
+
+.navbar {
+    position:fixed;
+    top:0;
+    width:80%;
+    font-family: Arial;
+    overflow: visible;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.navbar #nav-link{
+    width:100%;
+    list-style-type: none;
+    text-align: right;
+    margin-left: 10%;
+    margin-right: -20%;
+    margin-top:-3%;
+}
+
+/* Changes the properties for each nav bar link */
+.navbar a {
+    display:inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left:5%;
+    font-size: 35px;
+}
+.navbar img {
+    width: 10rem;
+    color:transparent;
 }
 
 .frontpage img{
+    display:inline-block;
+    margin-top: 100px;
+    width: 30%;
     object-fit: cover;
     object-position: 20% 10%;
 }
 
-
 .frontpage button{
-    float: center;
-    text-indent: 75%;
+    /*button placement*/
+    margin-top: 3%;
     position:relative;
-    text-align: center;
-    line-height: 200%;
+    /*text placement */
+    text-indent: 90%;
+    line-height: 120%;
+    /* */
+    box-shadow: 0 5px 15px rgba(27, 27, 27, 0.4);
     flex-direction:column;
     display: inline-flex;
     flex-direction: column;
     width:20rem;
     height:6rem;
     font-weight:bold;
-    font-size:2rem;
+    font-size:3rem;
     padding:1rem;
     background:firebrick;
     color:white;
     border:2px solid transparent;
     border-radius:10rem;
+    
     transition:background 200ms ease-in, color 200ms ease-in;
-    transition: 200ms ease-in, color 200ms ease-in;
-}
-
-:hover.button{
-
+    transition:border 100ms ease-in, color 200ms ease-in;
 }
 
 :hover.frontpage button{
+    box-shadow: 5px 10px #888888;
     background:transparent;
     color:white;
     border:solid #ffffff;
 }
 
-.navbar {
-    position:fixed;
-    overflow: visible;
-    background-color: transparent;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    top:0;
-    left:0;
-    
-}
-.navbar #nav-link{
-    position:fixed;
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    color: #f2f2f2;
-    text-align: right;
-    font-size: 25px;
-    margin-left: 80%;
-    margin-right:100%;
-    padding:0 0.125rem;
-    
-}
 
-/* Changes the properties for each nav bar link */
-.navbar a {
-    padding-left:20%;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.navbar img {
-    width: 20%;
-    margin-top:-2%;
-    color:transparent;
-}
 @media all and (max-width:720px){
     .navbar{
         flex-direction:column;
     }
+    .navbar img {
+        width: 20%;
+    }
 }
+
