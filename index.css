@@ -91,16 +91,17 @@ body {
     background-image: linear-gradient(#003083, #ffffff); 
     background-size: 100% 1500px;
     background-repeat:no-repeat;
-    text-align: center;
+    text-align: end;
     vertical-align: middle;
     display: inline-block;
 }
 
 .frontpage img{
+  
+    margin-right:25%;
     display:inline-block;
     margin-top: 100px;
     width: 30%;
-    object-fit: cover;
 }
 
 .frontbutton{
@@ -144,6 +145,70 @@ body {
 .frontbutton:active{
     transform: scale(0.95);
 }
+
+
+.title{
+
+    pointer-events: none;
+    color: white;
+    font-size:3vw;
+    font-family: Arial;
+    position:absolute;
+    width:50%;
+    top:230%;
+    padding-right:5%;
+
+    overflow:hidden;
+}
+.unionville{
+    margin:0;
+    animation:10s slide-leftu;
+    animation-duration: 3s;
+}
+.science{
+    margin:0;
+    animation:10s slide-lefts;
+    animation-duration: 3s;
+}
+.club{
+    margin:0;
+    animation:10s slide-leftc;
+    animation-duration: 3s;
+}
+
+@keyframes slide-leftu{
+    from {
+      margin-left: 100%;
+      width: 80%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slide-lefts{
+    from {
+      margin-left: 100%;
+      width: 80%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slide-leftc{
+    from {
+      margin-left: 100%;
+      width: 80%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 
   @keyframes fadeIn {
