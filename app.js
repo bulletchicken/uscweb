@@ -1,17 +1,20 @@
 //oo wee oo... wee
-function scrollToAnchor(aid){
-    console.log('yo');
-    const destination = $("a[name='"+ aid +"']");
-      $("#destination").animate({
-        scrollTop: destination.offset().top
-      },'slow');
-}
+window.onload = function(){
 
-$(document).on("click", "entrance", function(){
-  scrollToAnchor('#destination');
-})
+  var btnText = document.getElementById("btnText");
+
+  jQuery.easing.def = "easeOutCubic";
+  $("html, body").animate({
+    scrollTop: $("#destination").offset().top
+  }, 'easeOutQuint'); 
+
+  console.log("hit");
+}
 
 function empty(){
     /*make smaller */
-    console.log('hit');
+    console.log(btnText);
+    btnText.innerHTML = "welcome";
+    
 }
+
