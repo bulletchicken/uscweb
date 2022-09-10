@@ -98,7 +98,7 @@ body {
 
 .frontbutton{
     margin:auto;
-    text-align: center;
+    text-align: -webkit-center;
     /*button placement*/
     margin-top: 3%;
     position:relative;
