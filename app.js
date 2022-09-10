@@ -6,7 +6,7 @@ window.onload = function(){
   jQuery.easing.def = "easeOutCubic";
   $("html, body").animate({
     scrollTop: $("#destination").offset().top
-  }, 3000, "easeInOutQuint"); 
+  }, 1000, "easeInOutQuint"); 
 
   console.log("hit");
 }
