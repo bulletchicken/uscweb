@@ -9,6 +9,7 @@
     <link rel="stylesheet" href = "index.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="particles.js"></script>
 
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -16,16 +17,15 @@
 </head>
 <body>
 
-    
-
     <div id="particles-js"></div>
-    <script src="particles.js"></script>
+    
     <script>
         particlesJS.load('particles-js', 'config/particles.json', function(){
           console.log('particles.json loaded...');
         });
     </script>
     
+    <!--
     <nav class="navbar">
         <div>
             <img src = "images/logo.png">
@@ -37,16 +37,31 @@
             <a href="#gallery">Gallery</a>
         </ul>
     </nav>
-
+    -->
     <!---->
 
+
+
+
+    
     <div class="entrance">
+        <div id = "space"></div>
+            <script>
+                particlesJS.load('space', 'config/stars.json', function(){
+                console.log('stars.json loaded...');
+                });
+            </script>
         <a href="#destination">... a place for <br> discovery...</a href>
     </div>
 
+    
 
+    
     <div id="theDepths"></div>
     
+
+
+
     
     <div id="destination" class="frontpage">
         <div class = "title">
@@ -59,10 +74,6 @@
         <br/>
         <button class="frontbutton" onclick=empty() ><a id="btnText">Join</a></button>
     </div>
-
-
-
-
 
     
     <div id="execs"></div>

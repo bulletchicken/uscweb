@@ -2,13 +2,14 @@
 window.onload = function(){
 
   var btnText = document.getElementById("btnText");
-
   jQuery.easing.def = "easeOutCubic";
   $("html, body").animate({
     scrollTop: $("#destination").offset().top
   }, 1000, "easeInOutQuint"); 
 
   console.log("hit");
+
+  
 }
 
 function empty(){
@@ -26,3 +27,20 @@ $.easing = Object.assign({}, $.easing, {
       return c/2*((t-=2)*t*t*t*t + 2) + b;
     },
 })
+
+/*
+let called = false
+document.addEventListener("scroll", e => {
+  if (document.documentElement.scrollTop >= 2000) {
+    if (called) return
+    called = true
+    $("#particles-js").css({
+      position:'fixed',
+      top:0
+    })
+  }
+  if (document.documentElement.scrollTop < 2000) {
+    called=false;
+  }
+})
+*/
