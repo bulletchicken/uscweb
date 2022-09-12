@@ -1,4 +1,11 @@
 # uscweb
 Unionville Highschool's informational website for Science Club
 
-Created a website including parallaxing...
+## Languages Used ##
+- Javascript
+- HtML
+- CSS/SCSS
+
+## Elements ##
+- Parallaxing
+- 
