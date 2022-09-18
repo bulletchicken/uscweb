@@ -1,16 +1,22 @@
 //oo wee oo... wee
+
 window.onload = function(){
 
   var btnText = document.getElementById("btnText");
-  jQuery.easing.def = "easeOutCubic";
+
+  
+  //jQuery.easing.def = "easeInOutQuint";
   $("html, body").animate({
     scrollTop: $("#destination").offset().top
   }, 1000, "easeInOutQuint"); 
-
-  console.log("hit");
-
   
 }
+
+/*
+var scroll = new SmoothScroll('a[href*="#"]',{
+  easing: 'easeInOutQuint'
+});
+*/
 
 function empty(){
     /*make smaller */
@@ -19,14 +25,18 @@ function empty(){
     
 }
 
+
+
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 $.easing = Object.assign({}, $.easing, {
   easeInOutQuint: function (x, t, b, c, d) {
     if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+      console.log('hit');
       return c/2*((t-=2)*t*t*t*t + 2) + b;
     },
 })
+
 
 /*
 let called = false
