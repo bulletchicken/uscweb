@@ -8,7 +8,7 @@ window.onload = function(){
   //jQuery.easing.def = "easeInOutQuint";
   $("html, body").animate({
     scrollTop: $("#destination").offset().top
-  }, 1000, "easeInOutQuint"); 
+  }, 6000, "easeInOutQuint"); 
   
 }
 
